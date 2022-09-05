@@ -1,0 +1,10 @@
+*
+* Instrucciones para el uso de webServer con nginx alpine y contenido estático
+*
+
+1. Crear un archivo de configuracion para docker, especificando el tipo de servidor y el os
+2. Crear el contenido que se va a exponer, en este caso una página simple index.html
+3. Crear la imagen con el comando "build . -t ejercicio01:v0" , de modo que queda especificado el tag de version v0
+4. Se puede chequear la imagen creada con "docker images"
+5. Luego hacer un "docker run -p 8080:80 -t ejercicio01:v1" o "docker run -p 8080:80 -d -t ejercicio01:v1" para con "-d" este en modo detacht
+6. Con "docker stop 5dff23099db9" se puede detener el servicio en ejecución, donde el "5dff23099db9" sería el CONTAINER_ID

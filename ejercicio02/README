@@ -1,0 +1,21 @@
+# ejercicio 2
+
+1. Descarga la imagen nicopaez/pingapp:3.0.0
+"docker pull nicopaez/pingapp:3.0.0"
+
+2. Crear un repositorio en dockerhub
+Creado desde la web
+
+3. Sube la imagen descargada al repositorio creado
+Para subir la imagen primero es necesario cambiar el repositorio al que hace referencia, a modo de mantener el nombre del creador hice lo siguiente
+"docker tag nicopaez/pingapp:3.0.0 apadillaperez/curso:nicopaez_pingapp_3.0.0" 
+Luego es necesario subirla al repositorio, después del iniciar sesión en el repositorio, un simple 
+"docker push apadillaperez/curso:nicopaez_pingapp_3.0.0"
+
+4. Crea una carpeta "ejercicio02" en tu repositorio y pon dentro de la misma un archivo README.md con el detalle de instrucciones que utilizaste para completar la tarea. 
+"este es el archivo README"
+
+5. Asegurate que la imagen queda publicada como pública.
+
+6. Incluye al final de las instrucciones la sentencia docker pull exacta para descargar tu imagen.
+"docker pull apadillaperez/curso:nicopaez_pingapp_3.0.0"
