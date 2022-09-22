@@ -10,14 +10,21 @@ La imágenes de dos contenedores están especificadas en el docker-compose y son
 ### Descripción del archivo docker-compose-yml
 
 1- Se define la version de docker-compose que se está utilizando **version: '2'**
+
 2- Se especifican los servicios que se van a ejecutar, es decir, los contenedores que se van a ejecutar **services:**
-3- Se define el nombre de cada uno de las aplicaciones que se pueden ver con "docker-compose ps", los nombres toman por prefijo
- el nombre de la carpeta y sufijo el nombre del proceso **web:**
+
+3- Se define el nombre de cada uno de las aplicaciones que se pueden ver con "docker-compose ps", los nombres toman por prefijo el nombre de la carpeta y sufijo el nombre del proceso **web:**
+
 4- Se define la imagen a usar para construir el container **image: nicopaez/jobvacancy-ruby:1.3.0**
+
 5- Se establece enlace a la db **links: - db**
+
 6- Se hace el port bind **ports: - "3000:3000"**
+
 7- Se define la conexion con la db con sus variables de entorno **environment:**
-8. Se define la dependencia que tiene la app de la ejecucion del contenedor de db **depends_on:**
+
+8- Se define la dependencia que tiene la app de la ejecucion del contenedor de db **depends_on:**
+
 9- Se crea el contenedor de db, con el nombre y las propiedades especificados, similar al punto 4 y 6 **db:**
 
 4. **Dado que cada contenedor corre en forma aislada ¿Cómo es posible que esos contenedores se vean entre sí?**
